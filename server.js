@@ -15,7 +15,7 @@ app.use('/public', express.static(`${process.cwd()}/public`));
 
 const mongoose = require('mongoose');
 const AutoIncrementFactory = require('mongoose-sequence');
-const DB_URI = process.env.DB_URI;//'mongodb+srv://usermongo:kellepaca1@cluster0.ztdpa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const DB_URI = process.env.DB_URI;
 // establishing a database connection
 mongoose.connect(DB_URI, {
     useNewUrlParser: true,
